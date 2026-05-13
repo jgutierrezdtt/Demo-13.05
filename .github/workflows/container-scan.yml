@@ -3,13 +3,8 @@ name: Container Security Scan
 on:
   push:
     branches: [main]
-    paths:
-      - 'Dockerfile'
-      - 'src/**'
-      - 'requirements.txt'
   pull_request:
     branches: [main]
-
 permissions:
   contents: read
   security-events: write
